@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20196372292CD73A009CE507 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20196371292CD73A009CE507 /* main.swift */; };
+		2019637F292CD90B009CE507 /* swiftalgorithmstest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019637E292CD90B009CE507 /* swiftalgorithmstest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,19 @@
 /* Begin PBXFileReference section */
 		2019636E292CD73A009CE507 /* swiftalgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swiftalgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		20196371292CD73A009CE507 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2019637C292CD90A009CE507 /* swiftalgorithmstest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftalgorithmstest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2019637E292CD90B009CE507 /* swiftalgorithmstest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftalgorithmstest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2019636B292CD73A009CE507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20196379292CD90A009CE507 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				20196370292CD73A009CE507 /* swiftalgorithms */,
+				2019637D292CD90B009CE507 /* swiftalgorithmstest */,
 				2019636F292CD73A009CE507 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				2019636E292CD73A009CE507 /* swiftalgorithms */,
+				2019637C292CD90A009CE507 /* swiftalgorithmstest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +72,14 @@
 				20196371292CD73A009CE507 /* main.swift */,
 			);
 			path = swiftalgorithms;
+			sourceTree = "<group>";
+		};
+		2019637D292CD90B009CE507 /* swiftalgorithmstest */ = {
+			isa = PBXGroup;
+			children = (
+				2019637E292CD90B009CE507 /* swiftalgorithmstest.swift */,
+			);
+			path = swiftalgorithmstest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +102,23 @@
 			productReference = 2019636E292CD73A009CE507 /* swiftalgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		2019637B292CD90A009CE507 /* swiftalgorithmstest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20196380292CD90B009CE507 /* Build configuration list for PBXNativeTarget "swiftalgorithmstest" */;
+			buildPhases = (
+				20196378292CD90A009CE507 /* Sources */,
+				20196379292CD90A009CE507 /* Frameworks */,
+				2019637A292CD90A009CE507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = swiftalgorithmstest;
+			productName = swiftalgorithmstest;
+			productReference = 2019637C292CD90A009CE507 /* swiftalgorithmstest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +130,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					2019636D292CD73A009CE507 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2019637B292CD90A009CE507 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -111,9 +151,20 @@
 			projectRoot = "";
 			targets = (
 				2019636D292CD73A009CE507 /* swiftalgorithms */,
+				2019637B292CD90A009CE507 /* swiftalgorithmstest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2019637A292CD90A009CE507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2019636A292CD73A009CE507 /* Sources */ = {
@@ -121,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20196372292CD73A009CE507 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20196378292CD90A009CE507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2019637F292CD90B009CE507 /* swiftalgorithmstest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +319,34 @@
 			};
 			name = Release;
 		};
+		20196381292CD90B009CE507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eton.ccomw.swiftalgorithmstest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		20196382292CD90B009CE507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eton.ccomw.swiftalgorithmstest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +364,15 @@
 			buildConfigurations = (
 				20196376292CD73A009CE507 /* Debug */,
 				20196377292CD73A009CE507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20196380292CD90B009CE507 /* Build configuration list for PBXNativeTarget "swiftalgorithmstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20196381292CD90B009CE507 /* Debug */,
+				20196382292CD90B009CE507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
